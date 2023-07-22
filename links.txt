@@ -1,0 +1,3 @@
+https://www.dropbox.com/scl/fi/wj2zht7xibvfoaaejwq3d/maizeResnet50.h5?rlkey=bsxkxebjh510yad3icvsai8te&dl=0
+https://www.dropbox.com/scl/fi/xgc1s6r6yourl1g8v4m6a/MaizeML.h5?rlkey=w4hdb48dwsdf7nnufz522of20&dl=0
+https://www.dropbox.com/scl/fi/zfre172n7rpx7i8qwvypv/maizeAlexnet.h5?rlkey=whnvr2luamf8m5ea4x3blbh5s&dl=0
