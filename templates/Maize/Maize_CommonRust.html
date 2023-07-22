@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CommonRust</title>
+    <link rel="stylesheet" href="{% static 'Maize/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'Maize/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Maize/css/style.css' %}">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid"><a class="navbar-brand" href="#page-top"  style="color: black;">Maize Plant Disease Prediction</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'predict'%}">Predict</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background:url({% static 'Maize/images/bg-pattern.png' %}), linear-gradient(to left, #7b4397, #dc2430);">
+        <div class=" h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="mx-auto header-content">
+                        <h1 class="mb-5">"Nurturing Leaf Health: Empowering Corn Plant Guardians - Detecting <span style="color: rgb(0, 30, 255);">Common Rust Disease</span> in Your Images with Care"</h1><a class="btn btn-outline-warning btn-xl" role="button" href="#features">More Insights</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device" style="background-image:  url({% static 'Maize/images/iphone_6_plus_white_port.png' %});">
+                                <div class="screen"><img class="img-fluid" src="{% static 'Maize/images/PLNTPTH-CER-02_Figure_1.jpg' %}" style="min-height: 100%;"></div>
+                                <div class="button"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iphone-mockup"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center bg-primary download" id="download" style="background: linear-gradient(#fdcc52, #fdc539)">
+        <div class="">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Common Rust</h2>
+                    <p>It is a fungal disease that commonly affects corn plants. It is <br>characterized by the presence of reddish-brown to orange pustules on the<br> leaves, husks, and sometimes even the stalks of the plant. The pustules<br> contain spores that spread the disease to other plants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="">
+            <div class="text-center section-heading">
+                <h2>More Insights</h2>
+                <p class="text-start text-bg-danger" style="padding: 36px;">The disease is most prevalent during warm and humid weather conditions, <br>making it a significant concern for corn farmers, as it can result in <br>yield loss and decreased quality of the corn crop. Common rust typically<br> does not cause severe damage on its own, but when combined with other <br>stress factors, such as nutrient deficiencies or other diseases, it can <br>have a more significant impact on crop health.</p>
+                <p class="text-end text-bg-warning" style="margin-top: 44px;padding: 36px;">Early detection and timely management of common rust are crucial for <br>minimizing its impact on corn plants. Regular scouting of corn fields <br>and monitoring for the characteristic rust pustules on the leaves can <br>help identify the presence of the disease. Fungicides can be used as a <br>preventive or curative measure to control common rust, particularly if <br>infection levels are high or environmental conditions are favorable for <br>disease development.</p>
+                <p class="text-start text-bg-success" style="margin-top: 44px;padding: 36px;"><br>By uploading images of corn plant leaves showing symptoms of common <br>rust, you can contribute to the collective effort of disease detection <br>and monitoring. Our platform aims to provide a sympathetic and <br>supportive environment for corn plant guardians, enabling early <br>identification of common rust disease and promoting effective management<br> practices to ensure the health and vitality of corn crops.<br><br></p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section class="text-center bg-primary download" id="download-1" style="background: linear-gradient(#fdcc52, #fdc539)">
+        <div class="">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Rapid Remedies</h2>
+                    <p class="text-start"><br><strong>Crop Rotation</strong>: Practice crop rotation to reduce the build-up of common rust spores in the soil. Avoid planting corn in the same field year after year to disrupt the disease cycle.<br><strong>Resistant Varieties</strong>: Plant corn varieties that have been bred for resistance to common rust. These varieties can help minimize the impact of the disease.<br><strong>Fungicide Application</strong>: If common rust infection is severe or rapidly spreading, applying fungicides can help control the disease. Consult with local agricultural experts or extension services to determine the appropriate fungicide and application timings.<br><strong>Timely Planting</strong>: Opt for early planting to allow corn plants to establish and develop before the peak period of common rust occurrence. This can help reduce the susceptibility of the plants to the disease.<br><strong>Adequate Spacing</strong>: Properly space out the corn plants to enhance air circulation within the crop canopy. Good airflow can help reduce humidity and create an unfavorable environment for common rust development. <br><strong>Weed Control</strong>: Manage weeds within and around the corn field, as some weeds can serve as alternate hosts for common rust. Removing weeds can minimize potential sources of infection.<br><strong>Nutritional Balance</strong>: Maintain proper soil fertility and provide balanced nutrition to corn plants. A well-nourished plant is better equipped to resist diseases, including common rust.<br><strong>Timely Harvest</strong>: Harvest corn at the appropriate maturity stage to minimize the duration of exposure to common rust and prevent the spread of the disease.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center text-lg-start my-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Maize Plant Disease Prediction 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-facebook fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-twitter fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-instagram fa-2x fa-fw"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Maize/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Maize/js/new-age.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GrayLeaf Spot</title>
+    <link rel="stylesheet" href="{% static 'Maize/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'Maize/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Maize/css/style.css' %}">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid"><a class="navbar-brand" href="#page-top"  style="color: black;">Maize Plant Disease Prediction</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'predict'%}">Predict</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url({% static 'Maize/images/bg-pattern.png' %}), linear-gradient(to left, #7b4397, #dc2430);">
+        <div class=" h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="mx-auto header-content">
+                        <h1 class="mb-5">"Nurturing Leaf Health: Empowering Corn Plant Guardians - Detecting <span style="color: rgb(0, 30, 255);">Gray Leaf Spot Disease</span> in Your Images with Care"</h1><a class="btn btn-outline-warning btn-xl" role="button" href="#features">More Insights</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device" style="background-image: url({% static 'Maize/images/iphone_6_plus_white_port.png' %});">
+                                <div class="screen"><img class="img-fluid" src="{% static 'Maize/images/Gray_leaf_spot_Cercospora_zeae-maydis_5465607.png' %}" style="min-height: 100%;"></div>
+                                <div class="button"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iphone-mockup"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center bg-primary download" id="download" style="background: linear-gradient(#fdcc52, #fdc539);">
+        <div class="">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Gray Leaf Spot</h2>
+                    <p><br>It is a fungal disease that affects various grass species, including maize <br>(corn), turfgrasses, and other cereals. It is caused by the fungus <br>Cercospora zeae-maydis. Gray leaf spot can significantly impact crop <br>yields and turf quality, making it an important concern for agricultural<br> and turf grass industries.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features-1" class="features">
+        <div class="container-fluid">
+            <div class="text-center section-heading">
+                <h2>More Insights</h2>
+                <p class="text-start text-bg-danger" style="padding: 36px;"><br>Gray leaf spot is caused by the fungal pathogen Cercospora zeae-maydis. <br>It thrives under warm and humid conditions, often occurring when <br>temperatures range from 25 to 30°C (77 to 86°F). Prolonged leaf wetness <br>due to rain or irrigation further promotes disease development. <br>Overcrowding, excessive nitrogen fertilization, and poor air circulation<br> contribute to severity.<br><br></p>
+                <p class="text-end text-bg-warning" style="margin-top: 44px;padding: 36px;"><br>Detect gray leaf spot through visual inspection of lower leaves. Look <br>for small, tan lesions near the leaf collar that elongate and turn <br>grayish-brown with a rectangular shape. Yellow halos may surround the <br>lesions. Regular scouting and monitoring help identify early signs of <br>the disease.<br><br></p>
+                <p class="text-start text-bg-success" style="margin-top: 44px;padding: 36px;"><br>Prevent gray leaf spot by implementing cultural practices such as crop <br>rotation, using resistant maize hybrids, proper spacing, and irrigation <br>management. Avoid excessive leaf wetness and promote good air <br>circulation. Fungicides may be necessary in severe cases, following <br>recommended guidelines. Timely action and integrated pest management <br>practices are crucial for effective management.<br><br></p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary download" id="download-2" style="background: linear-gradient(#fdcc52, #fdc539);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Rapid Remedies</h2>
+                    <p class="text-start"><br><strong><span style="text-decoration: underline;">Cultural practices:</span></strong><br><strong>▲Crop rotation</strong>: Avoid planting maize in consecutive seasons to break the disease cycle and reduce pathogen buildup.<br><strong>▲Proper spacing and pruning</strong>: Provide adequate spacing between plants to improve air circulation and reduce humidity levels, limiting the favorable conditions for disease development.<br><strong>▲Irrigation management</strong>: Avoid overhead irrigation that can promote leaf wetness. Instead, utilize drip irrigation or soaker hoses to deliver water directly to the soil.<br><strong>▲Nutrient management</strong>: Maintain balanced fertilization practices to promote plant health and minimize susceptibility to diseases.<br><strong><span style="text-decoration: underline;">Resistant varieties</span></strong>:<br>▲Plant maize hybrids or turf grass cultivars that are resistant or tolerant to gray leaf spot. Consult with local agricultural experts or seed suppliers to identify suitable resistant varieties for your region.<br><strong><span style="text-decoration: underline;">Fungicide applications</span></strong>:<br>▲In severe cases or when cultural practices alone are insufficient, consider applying fungicides following local regulations and recommendations. It is important to select appropriate fungicides effective against gray leaf spot and follow the recommended application rates and timing.<br><strong><span style="text-decoration: underline;">Removal of infected plant material</span></strong><span style="text-decoration: underline;">:</span><br>▲Regularly scout and remove infected plant debris or leaves to reduce the source of inoculum and limit disease spread.<br><strong><span style="text-decoration: underline;">Monitoring and early detection</span></strong><span style="text-decoration: underline;">:</span><br>▲Regularly monitor the crop or turf grass for signs of gray leaf spot. Be vigilant in identifying initial symptoms and take prompt action to prevent further spread.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center text-lg-start my-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Maize Plant Disease Prediction 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-12 text-center text-lg-end my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-facebook fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-twitter fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-instagram fa-2x fa-fw"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Maize/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Maize/js/new-age.js' %}"></script>
+</body>
+
+</html>

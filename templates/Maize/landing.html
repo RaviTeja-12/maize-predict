@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Maize Plant Disease Prediction</title>
+    <link rel="stylesheet" href="{% static 'Maize/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'Maize/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Maize/fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Maize/css/animate.min.css' %}">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">Maize Plant Disease Prediction</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'predict'%}">Predict</a></li>
+                </ul>
+                
+            </div>
+            {% if user.is_authenticated %}
+            <a class="btn btn-primary ms-auto" role="button"href="{%url 'logout'%}" style="margin-right: 13px;">Logout</a>
+            {% else %}
+            <a class="btn btn-primary ms-auto" role="button"href="{%url 'register'%}" style="margin-right: 13px;">Sign Up</a>
+            <a class="btn btn-primary ms-auto" role="button" href="{%url 'login'%}">Sign In</a>
+            {% endif %}
+        </div>
+    </nav>
+    <header class="text-center text-white masthead" style="background: url(&quot;{% static 'Maize/images/wouter-supardi-salari-HE_MjmWh9eQ-unsplash.jpg' %}&quot;);background-size: cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto position-relative">
+                    <h1 class="text-capitalize mb-5">Maize Plant Disease Prediction Using Image Classification &nbsp;</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center bg-light features-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-magic-wand m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3 class="text-capitalize">high Quality Predictions</h3>
+                        <p class="lead mb-0">Prediction Algorithms were thoroughly tested.&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-smartphone m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Mobile Friendly</h3>
+                        <p class="lead mb-0">For the ease of farmers works very well on mobile phones.&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Easy to Use</h3>
+                        <p class="lead mb-0">Very interactive UI was developed for user handy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background: url(&quot; {% static 'Maize/images/guru-moorthy-gokul-BnsyVc5z0zs-unsplash.jpg' %}&quot;) center / cover no-repeat;"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>We Prioritize Farmers</h2>
+                    <p class="lead mb-0">The whole Web-App is based upon the farmers who are cultivating the fields regardless of the climate, so we came forward with the technology which helps to reduce their worries a bit.</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img" style="background: url(&quot; {% static 'Maize/images/middle-aged-asian-farmer-man.jpg' %}&quot;)  center / cover no-repeat;"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Just a Picture Far</h2>
+                    <p class="lead mb-0">Our system automates the analysis of leaf health conditions for farmers.<br> By simply uploading an image, our system processes it and provides <br>comprehensive insights and assessments, helping farmers efficiently <br>monitor the health of their crops.</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background:  url(&quot; {% static 'Maize/images/erik-oHSmhHK-BB0-unsplash.jpg' %}&quot;)  center / cover no-repeat;"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Rapid Remedies</h2>
+                    <p class="lead mb-0">We offer instant tips based on plant health analysis, covering watering,<br> pruning, nutrient adjustment, pest control, environmental <br>modifications, weed control, structural support, disease prevention, and<br> expert guidance for comprehensive plant care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center bg-light testimonials">
+        <div class="container">
+            <h2 class="mb-5">What people are saying...</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'Maize/images/clipboard-image.png' %}" width="192" height="192">
+                        <h5><br>Vaidhyanathaswamy S<br><br></h5>
+                        <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'Maize/images/clipboard-image-5.png' %}" width="192" height="192">
+                        <h5 style="padding: 11px;">S.K Saini</h5>
+                        <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'Maize/images/clipboard-image-3.png' %}" width="192" height="109">
+                        <h5><br><strong>Norman Borlaug</strong><br><br></h5>
+                        <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center text-white call-to-action" >
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto position-relative">
+                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit">Sign up!</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-start my-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Maize Plant Disease Prediction 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="{{ www.facebook.com }}"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="{{ www.twitter.com }}"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="{{ www.instagram.com }}""><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Maize/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Maize/js/bs-init.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Maize Plant Disease Prediction Upload</title>
+    <link rel="stylesheet" href="{% static 'Maize/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'Maize/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Maize/css/style.css' %}">
+    <link href="{% static 'fonts.css' %}" rel="stylesheet"> 
+</head>  
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid"><a class="navbar-brand" href="{%url 'home'%}" style="color: black;">Maize Plant Disease Prediction</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url({% static 'Maize/images/bg-pattern.png' %}), linear-gradient(to left, #7b4397, #dc2430);">
+        <div class=" h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="mx-auto header-content">
+                        <h1 class="mb-5">"Unveiling Leaf Health: Embrace the Corn Plant Journey - Share and Detect Disease through Leaf Images"</h1><a class="btn btn-outline-warning btn-xl" role="button" href="#features">Upload now</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device" style="background-image: url({% static 'Maize/images/iphone_6_plus_white_port.png' %});">
+                                <div class="screen">
+                                    <img class="img-fluid" src="{% static 'Maize/images/alem-omerovic-dlrLChnUlfc-unsplash.jpg' %}" style="min-width: 0; max-width: 100%; margin: 0; margin-top: 0; min-height: 100%;">
+                                </div>
+                                <div class="button"></div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="iphone-mockup"></div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center  download" id="download" style="background: linear-gradient(#fdcc52, #fdc539)">
+        <div class="">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Discover More Insights About The Disease&nbsp;</h2>
+                    <p>We will provide you the instant remedies for the disease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="">
+            <div class="text-center section-heading">
+                <h2>Share Your Leaf Images for Disease Detection</h2>
+                <p class="text-muted">Check out what you can do with this app theme!</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device" style="background-image: url('{% static 'Maize/images/iphone_6_plus_white_port.png' %}');">
+                                <div class="screen"><img class="img-fluid" src=" {% static 'Maize/images/uriel-soberanes-71yNGYk9Oyg-unsplash.jpg'%}" style="min-height: 100%;margin-top: 0px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <form method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <div>
+                                        <h1>Upload here..!</h1><input class="form-control" type="file" name="corn_Image"><button class="btn btn-primary border rounded-0 border-1" type="submit" style="margin-top: 8px;">UPLOAD</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center text-start  m-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Maize Plant Disease Prediction 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-facebook fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-twitter fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-instagram fa-2x fa-fw"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Maize/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Maize/js/new-age.js' %}"></script>
+</body>
+
+</html>

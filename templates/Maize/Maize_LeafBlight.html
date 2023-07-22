@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Leaf Blight</title>
+    <link rel="stylesheet" href="{% static 'Maize/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'Maize/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Maize/css/style.css' %}">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid"><a class="navbar-brand" href="#page-top"  style="color: black;">Maize Plant Disease Prediction</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'predict'%}">Predict</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background:url({% static 'Maize/images/bg-pattern.png' %}), linear-gradient(to left, #7b4397, #dc2430);">
+        <div class=" h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="mx-auto header-content">
+                        <h1 class="mb-5">"Nurturing Leaf Health: Empowering Corn Plant Guardians - Detecting <span style="color: rgb(0, 30, 255);">Leaf Blight Disease</span> in Your Images with Care"</h1><a class="btn btn-outline-warning btn-xl" role="button" href="#features">More Insights</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device" style="background-image: url({% static 'Maize/images/iphone_6_plus_white_port.png' %});">
+                                <div class="screen"><img class="img-fluid" src="{% static 'Maize/images/southern-leaf-blight-of-maize-maize-1.jpg' %}" style="min-height: 100%;"></div>
+                                <div class="button"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iphone-mockup"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center bg-primary download" id="download-1" style="background: linear-gradient(#fdcc52, #fdc539);">
+        <div class="">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Leaf Blight</h2>
+                    <p>It is a common fungal disease that affects maize plants, caused by several <br>species of the fungal pathogen Helminthosporium (also known as <br>Bipolaris). It is also referred to as Helminthosporium leaf blight or <br>southern corn leaf blight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features-1" class="features" >
+        <div class="container-fluid">
+            <div class="text-center section-heading">
+                <h2>More Insights</h2>
+                <p class="text-start text-bg-danger" style="padding: 36px;">Leaf blight is typically caused by fungal or bacterial pathogens that <br>invade plant foliage. Fungal pathogens such as Alternaria, Bipolaris, <br>Cercospora, or bacterial pathogens like Xanthomonas and Pseudomonas are <br>commonly associated with leaf blight. These pathogens can enter the <br>plants through natural openings or wounds, or they may be spread through<br> contaminated tools, wind, rain splash, or insects. Leaf blight <br>pathogens thrive under specific environmental conditions, including high<br> humidity, moderate temperatures, and prolonged leaf wetness. <br>Additionally, plant stress factors like poor nutrition, overcrowding, or<br> injuries can increase the susceptibility of plants to leaf blight <br>infections.</p>
+                <p class="text-end text-bg-warning" style="margin-top: 44px;padding: 36px;">Detecting leaf blight involves careful observation and visual inspection<br> of the plants. The primary symptoms of leaf blight are the presence of <br>irregularly shaped lesions or spots on the leaves. These lesions can <br>vary in color, ranging from tan, brown, gray, or black to yellow or even<br> purple, depending on the specific pathogen involved. The lesions may <br>have defined or fuzzy borders, and in severe cases, they can merge, <br>leading to extensive blighting of the foliage. By closely examining the <br>leaves, looking for characteristic color variations, size, shape, and <br>border patterns of the lesions, growers can identify the presence of <br>leaf blight. For accurate identification of the specific pathogen <br>causing the blight, it is advisable to consult with local agricultural <br>extension services, plant pathologists, or experts who can provide <br>further guidance and laboratory testing if needed.</p>
+                <p class="text-start text-bg-success" style="margin-top: 44px;padding: 36px;">Taking proactive measures can greatly contribute to the prevention and <br>management of leaf blight, instilling confidence in growers. By <br>implementing precautionary measures such as sanitation, crop rotation, <br>proper plant spacing, and irrigation management, it is possible to <br>create an environment that is less conducive to leaf blight development.<br> These steps aim to reduce the sources of infection, enhance plant <br>vigor, and create conditions that are less favorable for pathogen <br>growth. Additionally, in severe cases or when prevention methods are <br>insufficient, the judicious use of fungicides or bactericides can <br>provide effective control. By embracing these precautionary measures and<br> responding promptly to the presence of leaf blight, growers can foster <br>optimism and increase the likelihood of maintaining healthier plants and<br> higher productivity.</p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section class="text-center bg-primary download" id="download-2" style="background: linear-gradient(#fdcc52, #fdc539);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Rapid Remedies</h2>
+                    <p class="text-start"><br><strong><span style="text-decoration: underline; background-color: rgba(255, 255, 255, 0);">Cultural practices:</span></strong><br><strong>Practice crop rotation: </strong>Avoid planting susceptible crops in consecutive seasons to disrupt the disease cycle and reduce pathogen buildup in the soil.<br><strong>Sanitation</strong>: Remove and destroy infected plant material, including leaves, stems, and debris, to minimize the source of inoculum.<br><strong>Proper plant spacing</strong>: Ensure adequate spacing between plants to improve air circulation and reduce humidity levels, creating an environment less favorable for pathogen growth.<br><strong>Balanced nutrition</strong>: Maintain proper plant nutrition to enhance plant health and resilience against diseases.<br><strong>Irrigation management</strong>: Avoid overhead irrigation that can promote leaf wetness, and instead use drip irrigation or soaker hoses to deliver water directly to the soil.<br>Plant resistance and selection:<br><strong>Choose resistant or tolerant varieties</strong>: Select plant varieties that have been bred or selected for resistance to leaf blight or other prevalent diseases in your region.<br>Consult with local agricultural experts or plant breeders to identify suitable resistant varieties for your specific location and growing conditions.<br><strong><span style="text-decoration: underline; background-color: rgba(254, 254, 254, 0);">Fungicides or bactericides:</span></strong><br><span style="color: rgb(255, 255, 255);">▲</span>When necessary, and following local regulations and recommendations, apply appropriate fungicides or bactericides to protect the foliage and control leaf blight.<br><span style="color: rgb(255, 255, 255);">▲</span>It is crucial to follow the instructions and recommended application rates provided by the manufacturer or agricultural extension services.<br><span style="color: rgb(255, 255, 255);">▲</span>Timely application is often key, especially during periods when environmental conditions are conducive to disease development.<br><strong><span style="text-decoration: underline; background-color: rgba(255, 255, 255, 0);">Monitoring and early detection:</span></strong><br><span style="color: rgb(253, 254, 255);">▲</span>Regularly inspect your plants for signs of leaf blight or any other diseases.<br><span style="color: rgb(255, 255, 255);">▲</span>Act promptly upon detecting initial symptoms to prevent the spread and escalation of the disease.<br><span style="color: rgb(255, 255, 255);">▲</span>Seek guidance from local agricultural experts or plant pathologists for accurate identification and tailored management strategies.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12
+                 text-center text-lg-start my-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Maize Plant Disease Prediction 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-facebook fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-twitter fa-2x fa-fw"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fa fa-instagram fa-2x fa-fw"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Maize/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Maize/js/new-age.js' %}"></script>
+</body>
+
+</html>
